@@ -1,0 +1,78 @@
+{
+   "abstract" : "WebSocket server as a PSGI application",
+   "author" : [
+      "Toshio Ito <toshioito@cpan.org>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.4003, CPAN::Meta::Converter version 2.132140",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Plack-App-WebSocket",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "eg",
+         "inc"
+      ],
+      "file" : [
+         "README.pod"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "AnyEvent" : "0",
+            "AnyEvent::WebSocket::Client" : "0.20",
+            "Module::Build::Pluggable::CPANfile" : "0.02",
+            "Net::EmptyPort" : "0",
+            "Plack::Util" : "0",
+            "Scalar::Util" : "0",
+            "Test::More" : "0",
+            "Test::Requires" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.40",
+            "Module::Build::Pluggable" : "0.09",
+            "Module::Build::Pluggable::CPANfile" : "0.02"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "AnyEvent" : "0",
+            "AnyEvent::WebSocket::Server" : "0",
+            "Carp" : "0",
+            "Devel::GlobalDestruction" : "0",
+            "Plack::Component" : "0",
+            "Plack::Response" : "0",
+            "Scalar::Util" : "0",
+            "Try::Tiny" : "0",
+            "parent" : "0"
+         }
+      }
+   },
+   "provides" : {
+      "Plack::App::WebSocket" : {
+         "file" : "lib/Plack/App/WebSocket.pm",
+         "version" : "0.01"
+      },
+      "Plack::App::WebSocket::Connection" : {
+         "file" : "lib/Plack/App/WebSocket/Connection.pm",
+         "version" : "0.01"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "repository" : {
+         "url" : "git://github.com/debug-ito/Plack-App-WebSocket.git"
+      }
+   },
+   "version" : "0.01"
+}
