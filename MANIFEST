@@ -15,9 +15,9 @@ t/testlib/Responder.pm
 t/testlib/Util.pm
 t/twiggy.t
 xt/browser.t
+xt/consistent_version.t
 xt/js/browser.html
 xt/manifest.t
-xt/pod-coverage.t
 xt/pod.t
 META.yml
 META.json

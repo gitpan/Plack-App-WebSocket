@@ -4,7 +4,7 @@
       "Toshio Ito <toshioito@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4003, CPAN::Meta::Converter version 2.132140",
+   "generated_by" : "Module::Build version 0.42",
    "license" : [
       "perl_5"
    ],
@@ -39,7 +39,7 @@
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.40",
+            "Module::Build" : "0.42",
             "Module::Build::Pluggable" : "0.09",
             "Module::Build::Pluggable::CPANfile" : "0.02"
          }
@@ -58,21 +58,11 @@
          }
       }
    },
-   "provides" : {
-      "Plack::App::WebSocket" : {
-         "file" : "lib/Plack/App/WebSocket.pm",
-         "version" : "0.01"
-      },
-      "Plack::App::WebSocket::Connection" : {
-         "file" : "lib/Plack/App/WebSocket/Connection.pm",
-         "version" : "0.01"
-      }
-   },
    "release_status" : "stable",
    "resources" : {
       "repository" : {
          "url" : "git://github.com/debug-ito/Plack-App-WebSocket.git"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
