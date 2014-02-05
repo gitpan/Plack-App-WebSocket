@@ -60,9 +60,12 @@
    },
    "release_status" : "stable",
    "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/debug-ito/Plack-App-WebSocket/issues"
+      },
       "repository" : {
          "url" : "git://github.com/debug-ito/Plack-App-WebSocket.git"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }

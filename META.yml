@@ -41,5 +41,6 @@ requires:
   Try::Tiny: 0
   parent: 0
 resources:
+  bugtracker: https://github.com/debug-ito/Plack-App-WebSocket/issues
   repository: git://github.com/debug-ito/Plack-App-WebSocket.git
-version: 0.02
+version: 0.03
