@@ -4,13 +4,13 @@
       "Toshio Ito <toshioito@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.42",
+   "generated_by" : "Module::Build version 0.4205",
    "license" : [
       "perl_5"
    ],
    "meta-spec" : {
-      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-      "version" : "2"
+      "url" : "https://metacpan.org/pod/CPAN::Meta::Spec",
+      "version" : 2
    },
    "name" : "Plack-App-WebSocket",
    "no_index" : {
@@ -25,23 +25,10 @@
       ]
    },
    "prereqs" : {
-      "build" : {
-         "requires" : {
-            "AnyEvent" : "0",
-            "AnyEvent::WebSocket::Client" : "0.20",
-            "Module::Build::Pluggable::CPANfile" : "0.02",
-            "Net::EmptyPort" : "0",
-            "Plack::Util" : "0",
-            "Scalar::Util" : "0",
-            "Test::More" : "0",
-            "Test::Requires" : "0"
-         }
-      },
       "configure" : {
          "requires" : {
             "Module::Build" : "0.42",
-            "Module::Build::Pluggable" : "0.09",
-            "Module::Build::Pluggable::CPANfile" : "0.02"
+            "Module::Build::Prereqs::FromCPANfile" : "0.02"
          }
       },
       "runtime" : {
@@ -56,6 +43,17 @@
             "Try::Tiny" : "0",
             "parent" : "0"
          }
+      },
+      "test" : {
+         "requires" : {
+            "AnyEvent" : "0",
+            "AnyEvent::WebSocket::Client" : "0.20",
+            "Net::EmptyPort" : "0",
+            "Plack::Util" : "0",
+            "Scalar::Util" : "0",
+            "Test::More" : "0",
+            "Test::Requires" : "0"
+         }
       }
    },
    "release_status" : "stable",
@@ -64,8 +62,9 @@
          "web" : "https://github.com/debug-ito/Plack-App-WebSocket/issues"
       },
       "repository" : {
-         "url" : "git://github.com/debug-ito/Plack-App-WebSocket.git"
+         "url" : "git://github.com/debug-ito/Plack-App-WebSocket.git",
+         "web" : "https://github.com/debug-ito/Plack-App-WebSocket"
       }
    },
-   "version" : "0.03"
+   "version" : "0.04"
 }
